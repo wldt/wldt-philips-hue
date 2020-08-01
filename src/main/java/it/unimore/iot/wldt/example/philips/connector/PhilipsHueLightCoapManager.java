@@ -51,7 +51,6 @@ public class PhilipsHueLightCoapManager {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 
     public void activate() throws PhilipsHueWorkerException {

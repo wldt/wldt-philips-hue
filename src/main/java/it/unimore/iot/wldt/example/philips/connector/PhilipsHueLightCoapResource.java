@@ -52,11 +52,11 @@ public class PhilipsHueLightCoapResource extends CoapResource {
         if(philipsHueLightCoapResourceDescriptor.getTitle() != null)
             getAttributes().setTitle(philipsHueLightCoapResourceDescriptor.getTitle());
 
-        if(philipsHueLightCoapResourceDescriptor.getObservable()) {
-            setObservable(true); // enable observing
-            setObserveType(CoAP.Type.CON); // configure the notification type to CONs
-            getAttributes().setObservable(); // mark observable in the Link-Format
-        }
+        //if(philipsHueLightCoapResourceDescriptor.getObservable()) {
+        //    setObservable(true); // enable observing
+        //    setObserveType(CoAP.Type.CON); // configure the notification type to CONs
+        //    getAttributes().setObservable(); // mark observable in the Link-Format
+        //}
 
         if(philipsHueLightCoapResourceDescriptor.getResourceType() != null)
             getAttributes().addAttribute("rt",philipsHueLightCoapResourceDescriptor.getResourceType());

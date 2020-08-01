@@ -34,7 +34,7 @@ public class WldtPhilipsHueLightProcess {
 
             PhilipsHueLightWorkerConfiguration philipsHueLightWorkerConfiguration = new PhilipsHueLightWorkerConfiguration();
             philipsHueLightWorkerConfiguration.setBridgeAddress("192.168.1.230");
-            philipsHueLightWorkerConfiguration.setUsername("CHANGE_WITH_YOUR_USERNAME");
+            philipsHueLightWorkerConfiguration.setUsername("hf0Y561H6gp54UhhahAu0xN6MnYGPRp5ujq6FdGM");
 
             WldtEngine wldtEngine = new WldtEngine(wldtConfiguration);
             wldtEngine.addNewWorker(new PhilipsHueLightWorker(wldtEngine.getWldtId(), philipsHueLightWorkerConfiguration));
