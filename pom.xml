@@ -31,8 +31,6 @@
     <dependencies>
 
         <!-- Local Reference to Libs folder -->
-
-        <!--
         <dependency>
             <groupId>it.unimore.dipi</groupId>
             <artifactId>wldt-core</artifactId>
@@ -40,7 +38,6 @@
             <scope>system</scope>
             <systemPath>${basedir}/libs/wldt-core-0.1.jar</systemPath>
         </dependency>
-        -->
 
         <dependency>
             <groupId>com.github.spullara.mustache.java</groupId>
