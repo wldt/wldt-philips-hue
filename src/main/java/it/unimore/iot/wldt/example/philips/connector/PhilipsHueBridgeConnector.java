@@ -120,17 +120,27 @@ public class PhilipsHueBridgeConnector {
 
         try{
 
+            long start = System.currentTimeMillis();
+
             OkHttpClient client = new OkHttpClient.Builder()
                     .connectTimeout(2, TimeUnit.MINUTES)
                     .readTimeout(2, TimeUnit.MINUTES)
                     .build();
 
             Request request = new Request.Builder()
+                    .cacheControl(new CacheControl.Builder()
+                            .maxAge(0, TimeUnit.SECONDS)
+                            .build())
                     .url(getBridgeLightUrl(bridgeIp, username, lightId))
                     .get()
                     .build();
 
             Response response = client.newCall(request).execute();
+
+            long end = System.currentTimeMillis();
+            long diff = end - start;
+
+            System.out.println("HTTP Diff: " + diff);
 
             if (response.isSuccessful()) {
 
