@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Author: Marco Picone, Ph.D. (marco.picone@unimore.it)
- * Date: 24/03/2020
- * Project: White Label Digital Twin - Java Framework
+ * Date: 24/07/2020
+ * Project: Philips Hue Digital Twin Example - White Label Digital Twin - Java Framework
  */
 public class WldtPhilipsHueLightProcess {
 

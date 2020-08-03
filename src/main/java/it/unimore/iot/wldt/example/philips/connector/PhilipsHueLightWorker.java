@@ -11,7 +11,11 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Author: Marco Picone, Ph.D. (marco.picone@unimore.it)
+ * Date: 24/07/2020
+ * Project: Philips Hue Digital Twin Example - White Label Digital Twin - Java Framework
+ */
 public class PhilipsHueLightWorker extends WldtWorker<PhilipsHueLightWorkerConfiguration, String, String> {
 
     private static final Logger logger = LoggerFactory.getLogger(PhilipsHueLightWorker.class);
